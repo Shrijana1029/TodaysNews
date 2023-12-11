@@ -17,9 +17,8 @@ const App = () => {
     
      <BrowserRouter>
      <Navbar/>
-     {/* <Carousel/> */}
-     
        <Routes>
+      <Route path="/" element={<News/>} />
        <Route exact path='/home'  element={<News/ >} />
       <Route exact path='/sports'  element={<Sports/ >} />
       <Route exact path='/climate'  element={<Climate/>} />
@@ -28,8 +27,7 @@ const App = () => {
       
     </Routes>
     </BrowserRouter>
-    {/* <News/> */}
-    {/* <Carousel/> */}
+    
     </>
   )
 }
