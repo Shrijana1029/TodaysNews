@@ -21,8 +21,8 @@ const App = () => {
       <Route path="/" element={<News/>} />
        <Route exact path='/home'  element={<News/ >} />
       <Route exact path='/sports'  element={<Sports/ >} />
-      <Route exact path='/climate'  element={<Climate/>} />
-      <Route exact path='/science'  element={<Science/>} />
+      <Route exact path='/climate'  element={<Climate/ >} />
+      <Route exact path='/science'  element={<Science/ >} />
       <Route exact path='*'  element={<NoPage/>} />
       
     </Routes>

@@ -5,17 +5,17 @@ import Carousel from './Carousel';
 
 const Science = () => {
 
-    const [articles, setArticles] = useState([]);
+    const [arti, setArticles] = useState([]);
     useEffect(()=>{
         let url = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1b4a55a48f114a6cb112e801767fc42a";
-        fetch(url).then(response=> response.json()).then(data=> setArticles(data.articles));
+        fetch(url).then(response=> response.json()).then(data=> setArticles(data.arti));
     },[])
   return (
     <>
     <Carousel img1= "img/science1.webp"/>
      <div className="container my  3">
      <div className="row">
-      {articles.map((news,index)=>{
+      {arti.map((news,index)=>{
       
       return(
       <div className="col  md  4">
@@ -26,10 +26,10 @@ const Science = () => {
        }
       )}
       </div>
-      <div class="d-flex justify-content-between">
+      <div className="d-flex justify-content-between">
               
-              <button type="button"  class="btn btn-danger btn btn-primary btn-sm">&larr; Previous</button>
-              <button type="button" class="btn btn-danger btn btn-primary btn-sm" >Next &rarr;</button>
+              <button type="button"  className="btn btn-danger btn btn-primary btn-sm">&larr; Previous</button>
+              <button type="button" className="btn btn-danger btn btn-primary btn-sm" >Next &rarr;</button>
               </div>
     </div>
    

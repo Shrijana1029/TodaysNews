@@ -28,10 +28,10 @@ const Sports = () => {
       )}
       </div>
 
-      <div class="d-flex justify-content-between">
+      <div className="d-flex justify-content-between">
               
-              <button type="button"  class="btn btn-danger btn btn-primary btn-sm">&larr; Previous</button>
-              <button type="button" class="btn btn-danger btn btn-primary btn-sm" >Next &rarr;</button>
+              <button type="button"  className="btn btn-danger btn btn-primary btn-sm">&larr; Previous</button>
+              <button type="button" className="btn btn-danger btn btn-primary btn-sm" >Next &rarr;</button>
               </div>
       
     </div>
