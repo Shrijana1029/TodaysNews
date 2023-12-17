@@ -5,17 +5,17 @@ import Carousel from './Carousel';
 
 const Science = () => {
 
-    const [arti, setArticles] = useState([]);
+    const [articlescles, setarticlescles] = useState([]);
     useEffect(()=>{
         let url = "https://newsapi.org/v2/top-headlines?country=us&category=science&apiKey=1b4a55a48f114a6cb112e801767fc42a";
-        fetch(url).then(response=> response.json()).then(data=> setArticles(data.arti));
+        fetch(url).then(response=> response.json()).then(data=> setarticlescles(data.articlescles));
     },[])
   return (
     <>
     <Carousel img1= "img/science1.webp"/>
      <div className="container my  3">
      <div className="row">
-      {arti.map((news,index)=>{
+      {articles.map((news,index)=>{
       
       return(
       <div className="col  md  4">
